@@ -47,7 +47,7 @@ A simple and efficient **Password Generator** built using **React**. This applic
 Contributions are welcome! Feel free to **fork** the repository, create a new branch, and submit a **pull request**.
 
 ## 📬 Contact
-For any questions or suggestions, feel free to open an issue or reach out via [GitHub](https://github.com/Baljender-Singh-Bamrah/password-generator).
+For any questions or suggestions, feel free to open an issue or reach out via [GitHub](https://github.com/Baljender-Singh-Bamrah/password-generator) or [Gmail](baljendersinghbamrah@gmail.com).
 
 ---
 **Made with ❤️ using React**
