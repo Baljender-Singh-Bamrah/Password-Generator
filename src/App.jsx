@@ -6,7 +6,8 @@ const App = () => {
   const [pass, setPass] = useState("")
   const [ch, setch] = useState(false)
   const [d, setd] = useState(false)
- const [Copy, setCopy] = useState("Copy")
+  const [Copy, setCopy] = useState("Copy")
+  
   const Copy_Pass = useCallback(()=> {
     window.navigator.clipboard.writeText(pass);
 
@@ -24,11 +25,11 @@ const App = () => {
     let number = '1234567890';
     let special_char = '~!@#$%^&*';
 
-    if(ch){
+    if(d){
       str+=number;
     }
 
-    if(d) {
+    if(ch) {
       str+=special_char;
     }
 
@@ -55,19 +56,19 @@ const App = () => {
           </div>
           <div className='w-full rounded h-10 md:flex-col flex items-center justify-around text-orange-500 flex-wrap'>
             <div className="flex gap-4">
-              <input type="range" id="length" min="4" max="32" onChange={(e)=>{{setlen(e.target.value)}}}/>
+              <input className="cursor-pointer" type="range" value={len} id="length" min="4" max="32" onChange={(e)=>{{setlen(e.target.value)}}}/>
               <div className="w-20"> Length({len})</div>
             </div>
             <div className="flex items-center gap-1">
-              <input type="checkbox" name="digit" id="d" onChange={()=>{{setd(!d)}}} />
-              <label htmlFor="d">Digit</label>
+              <input  type="checkbox" name="digit" id="d" onChange={()=>{{setd(!d)}}} className="cursor-pointer"/>
+              <label htmlFor="d" className="cursor-pointer">Digit</label>
             </div>
             <div className="flex items-center gap-1">
-              <input type="checkbox" name="char" id="ch" onChange={()=>{{setch(!ch)}}}/>
-              <label htmlFor="ch">Special Character</label>
+              <input type="checkbox" name="char" id="ch" onChange={()=>{{setch(!ch)}}} className="cursor-pointer"/>
+              <label htmlFor="ch" className="cursor-pointer">Special Character</label>
             </div>
           </div>
-          <button className="w-full justify-center bg-blue-500 flex rounded-2xl p-2 text-xl mt-4 flex-wrap" onClick={passGen}>Generate New Password</button>
+          <button className="w-full justify-center bg-blue-500 flex rounded-2xl p-2 cursor-pointer text-xl mt-4 flex-wrap" onClick={passGen}>Generate New Password</button>
         </div>
       </div>
     </>
