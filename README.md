@@ -37,17 +37,22 @@ A simple and efficient **Password Generator** built using **React**. This applic
 4. Click **Generate New Password** to create a secure password.
 5. 📋 Copy the password to your clipboard with one click.
 
+
 ## 🛠️ Technologies Used
-- ⚛️ React.js
+- ⚛️ React.js - Frontend framework
+- ⚡ Vite - Fast build tool
 - 📜 HTML5
-- 🎨 CSS3
+- 🎨 Tailwind CSS - Utility-first styling framework
 - 🟨 JavaScript (ES6+)
+
 
 ## 🤝 Contributing
 Contributions are welcome! Feel free to **fork** the repository, create a new branch, and submit a **pull request**.
 
+
 ## 📬 Contact
 For any questions or suggestions, feel free to open an issue or reach out via [GitHub](https://github.com/Baljender-Singh-Bamrah/password-generator).
+
 
 ---
 **Made with ❤️ using React**
